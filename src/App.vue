@@ -6,7 +6,7 @@
   <router-view/>
 </template>
 
-<style>
+<style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,5 +26,11 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.space{
+  span{
+    margin:3px;
+  }
 }
 </style>

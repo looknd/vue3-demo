@@ -3,8 +3,13 @@
     <h1>This is an about page</h1>
     <span>{{ double }}</span>  <br>
     <span>{{ count }}</span>
-    <p>
-      <button @click="increment">增加</button>
+    <p class="space">
+      <span>
+        <button @click="increment">增加</button>
+      </span>
+      <span>
+        <button>减少</button>
+      </span>
     </p>
   </div>
 </template>
