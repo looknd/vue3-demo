@@ -8,7 +8,9 @@ export const useCounterStore = defineStore('counter', {
   actions: {
     increment() {
       this.count++
-      console.log(this.count,'this.count')
     },
+    reduce(){
+      this.count&&this.count--
+    }
   },
 })

@@ -8,7 +8,7 @@
         <button @click="increment">增加</button>
       </span>
       <span>
-        <button>减少</button>
+        <button @click="reduce">减少</button>
       </span>
     </p>
   </div>
@@ -19,13 +19,17 @@ import { useCounterStore } from '../store/index'
 export default {
   setup() {
     const users = useCounterStore()
-    const handleClick = ()=>{
+    const increment = ()=>{
       users.increment()
+    }
+    const reduce = ()=>{
+      users.reduce()
     }
     return{
       double:computed(()=> users.double),
       count:computed(()=> users.count),
-      increment:handleClick
+      increment,
+      reduce
     }
   },
 }
