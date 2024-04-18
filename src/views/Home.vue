@@ -1,11 +1,17 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js App,from vue3"/>
   </div>
 </template>
 
-<script>
+<!-- script setup 模式 -->
+<script setup>
+
+import HelloWorld from '@/components/HelloWorld.vue'
+
+</script>
+<!-- <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 
@@ -15,4 +21,4 @@ export default {
     HelloWorld
   }
 }
-</script>
+</script> -->

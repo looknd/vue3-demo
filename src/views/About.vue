@@ -11,7 +11,24 @@
     </div>
   </div>
 </template>
-<script>
+<!-- script setup模式 -->
+<script setup>
+import {computed} from 'vue'
+import { useCounterStore } from '../store/index'
+
+const users = useCounterStore()
+const increment = ()=>{
+  users.increment()
+}
+const reduce = ()=>{
+  users.reduce()
+}
+// const double=computed(()=> users.double)
+const count=computed(()=> users.count)
+</script>
+
+<!-- setup 勾子模式 -->
+<!-- <script>
 import {computed} from 'vue'
 import { useCounterStore } from '../store/index'
 export default {
@@ -31,4 +48,4 @@ export default {
     }
   },
 }
-</script>
+</script> -->

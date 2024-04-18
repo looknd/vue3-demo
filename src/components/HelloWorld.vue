@@ -30,14 +30,19 @@
   </div>
 </template>
 
-<script>
+<!-- script setup 模式 -->
+<script setup>
+import {defineProps} from 'vue'
+defineProps(['msg'])
+</script>
+<!-- <script>
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
   }
 }
-</script>
+</script> -->
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
