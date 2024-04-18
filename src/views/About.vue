@@ -1,16 +1,14 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <span>{{ double }}</span>  <br>
-    <span>{{ count }}</span>
-    <p class="space">
-      <span>
-        <button @click="increment">增加</button>
-      </span>
-      <span>
-        <button @click="reduce">减少</button>
-      </span>
-    </p>
+    <div>
+      <span>{{ count }}</span>
+    </div>
+    <div>
+      <a-space>
+        <a-button type="primary" @click="increment">增加</a-button>
+        <a-button type="primary" @click="reduce">减少</a-button>
+      </a-space>
+    </div>
   </div>
 </template>
 <script>

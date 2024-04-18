@@ -28,9 +28,4 @@
   color: #42b983;
 }
 
-.space{
-  span{
-    margin:3px;
-  }
-}
 </style>
