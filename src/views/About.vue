@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <h3>{{title}}</h3>
     <div>
       <span>{{ count }}</span>
     </div>
@@ -13,13 +14,16 @@
 </template>
 <!-- script setup模式 -->
 <script setup>
-import {computed} from 'vue'
+import {ref,computed} from 'vue'
 import { useCounterStore } from '../store/index'
 
+const title = ref('示例组件')
 const users = useCounterStore()
+// 增加
 const increment = ()=>{
   users.increment()
 }
+// 减少
 const reduce = ()=>{
   users.reduce()
 }
